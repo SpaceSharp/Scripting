@@ -10,6 +10,10 @@ log(string logMsg)
 // Clears Log Window
 clearLogs()
 
+// Draws a text on screen.
+// After toggleTime the text will be removed
+drawText(string txt, int x, int y, int toggleTime = 20, int fontSize = 16, string hexColor = "#133713", double opacity = 1d)
+
 // Returns the percentage health of the player
 getPercentageHealth()
 
