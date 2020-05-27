@@ -11,6 +11,9 @@ log(string logMsg)
 clearLogs()
 
 // Returns the slot containing your requested item
+// Item code can be found on LoL Wiki
+// For example BOTRK can be found here: https://leagueoflegends.fandom.com/wiki/Blade_of_the_Ruined_King
+// BOTRK code is 3153
 getItemSlot(int code)
 
 // Draws a text on screen.
