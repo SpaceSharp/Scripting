@@ -10,7 +10,10 @@ log(string logMsg)
 // Clears Log Window
 clearLogs()
 
-// Returns the slot containing your requested item
+// Activates logging console output into a file on script unload
+toggleDebugLogs(bool debug)
+
+// Returns the slot containing your requested item. If no slot was found, returns 0.
 // Item code can be found on LoL Wiki
 // For example BOTRK can be found here: https://leagueoflegends.fandom.com/wiki/Blade_of_the_Ruined_King
 // BOTRK code is 3153
