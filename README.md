@@ -121,6 +121,25 @@ isInRange(int centerEllipseX, int centerEllipseY, int range, int x, int y, int w
 // Returns: {"r": value, "b":value, "g":value}
 getPixelColor(int x, int y)
 
+// This function allows to do some optical number recognition on screen in a given area
+// Make sure the area is not way too big otherwise it may detect numbers where no are
+readNumberFromScreen(int x, int y, int width, int height)
+
+// This function searches the whole screen for enemy champs and returns them as array.
+// the return value will look like this:
+/*
+[
+    {
+        "x": 123, // x position of champ
+        "y": 452,
+        "xHp": 182,   // x position of very left point in hp bar
+        "yHp": 473
+    },
+    // ... next enemy
+]
+*/
+searchAllEnemyChamps()
+
 // Returns all enemy champs found on screen. This function is quite fast as it retrieves the champs from an internal buffer.
 // However use with care as the data provided by this function may be up to ~200ms old. 
 // It will definitely most of the time not work if you click on an enemy champion based on the returned values in this function!
